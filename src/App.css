@@ -1,0 +1,72 @@
+:root {
+  --primary-color: #f5f5f5;
+  --secondary-color: #ffffff;
+  --accent-color: #007bff;
+  --text-color: #333333;
+  --border-color: #e0e0e0;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.movies-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.movie-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.movie-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.movie-poster {
+  width: 40px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 0.75rem;
+}
+
+.movie-title {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}

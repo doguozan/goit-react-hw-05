@@ -1,0 +1,93 @@
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.reviewsWrapper {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0 0 2rem;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.reviewsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.reviewItem {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.author {
+  font-size: 1.2rem;
+  color: #2c5282;
+  margin: 0 0 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.content {
+  line-height: 1.7;
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #4a5568;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #e53e3e;
+  background: #fff5f5;
+  border-radius: 8px;
+  border: 1px solid #feb2b2;
+}
+
+.noReviews {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #718096;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
+
+  .reviewItem {
+    padding: 1rem;
+  }
+}
